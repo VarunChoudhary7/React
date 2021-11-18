@@ -1,11 +1,16 @@
-const ListItem = () => {
+// const ListItem = (props) => {
+const ListItem = ({ chore }) => {
+
+    // console.log(props)
     return (
-        <li>
+        < li >
             <div>
-                Hello i am waste text
+                {/* {props.chore} */}
+                {chore}
+
             </div>
             <button style={{ background: "crimson", color: "white" }}>Delete</button>
-        </li>
+        </li >
     );
 }
 

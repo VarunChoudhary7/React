@@ -8,10 +8,8 @@ const Content = () => {
         <div className="container">
             <ul>
                 {
-                    // chores.forEach(chore => <li>{chore}</li>)
-                    // forEach cannot return anything 
-                    chores.map(chore => <ListItem />)
-                }
+                    // chores.map(chore => <ListItem chore={chore} chores={chores} />)}
+                    chores.map(chore => <ListItem chore={chore} />)}
 
             </ul>
 
