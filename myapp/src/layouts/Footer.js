@@ -4,7 +4,7 @@ const Footer = () => {
             <a href="#">Github</a>
             <a href="#">Instagram</a>
             <a href="#">Twitter</a>
-            <a href="#">LinkedIn</a>
+            <a href="#">Linkedin</a>
         </footer>
     );
 }
