@@ -2,11 +2,13 @@ import Description from "./Components/Description";
 import Description2 from "./Components/Description2";
 
 const App = () => {
-  // console.log(Description)
+
   return (
     <div>
-      <Description heading={'Heading One'} />
-      <Description2 />
+      {/* <Description admin={true} /> */}
+      <Description admin={false} />
+
+      {/* <Description2 /> */}
 
     </div>
   )
