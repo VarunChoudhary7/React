@@ -1,18 +1,15 @@
-import Navbar from "./layouts/Navbar";
-import Footer from "./layouts/Footer";
-import Content from "./Components/Content";
+import Description from "./Components/Description";
+import Description2 from "./Components/Description2";
 
 const App = () => {
-
+  // console.log(Description)
   return (
-    <div className="App">
-      {/* <Navbar /> */}
+    <div>
+      <Description heading={'Heading One'} />
+      <Description2 />
 
-      <Content />
-
-      {/* <Footer /> */}
-    </div >
-  );
+    </div>
+  )
 }
 
 export default App;
