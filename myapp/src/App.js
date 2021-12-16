@@ -1,17 +1,15 @@
-import Description from "./Components/Description";
-import Description2 from "./Components/Description2";
+import { useState } from 'react';
+import One from "./Components/One";
 
 const App = () => {
 
-  return (
-    <div>
-      {/* <Description admin={true} /> */}
-      <Description admin={false} />
+    const [data, setData] = useState([{ password: "abcd" }, { password: "12345" }])
 
-      {/* <Description2 /> */}
-
-    </div>
-  )
+    return (
+        <div>
+            <One data={data} />
+        </div>
+    )
 }
 
 export default App;
