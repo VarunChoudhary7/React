@@ -1,11 +1,28 @@
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { useState } from "react";
 
 const Two = () => {
-    const state = useSelector(state => state.products)
-    console.log(state)
+    const [product, setProduct] = useState('')
+    const state = useSelector(state => state.categories)
+
+    const dispatch = useDispatch()
+
+    const handleSubmit = () => {
+        // console.log(product)
+        const action = {
+            type: "ADD_PRODUCT",
+            payload: product
+        }
+        // console.log(action)
+        dispatch(action)
+
+    }
+
     return (
         <div>
-            <h2>I am component Two</h2>
+            <input onChange={(e) => { setProduct(e.target.value) }}
+                type="text" />
+            <button onClick={handleSubmit}>Add</button>
         </div>
     )
 }
