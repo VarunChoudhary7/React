@@ -7,7 +7,22 @@ import reducer from './reducer/reducer';
 import { Provider } from 'react-redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 
-const store = createStore(reducer, { products: ['iPhone11', 'iPhone12', 'iPhone13'], categories: ['mobiles', 'headsphones', 'cases'] }, composeWithDevTools())
+const chores = [
+  {
+    id: 1,
+    text: "Take food"
+  },
+  {
+    id: 2,
+    text: "Sleep"
+  },
+  {
+    id: 3,
+    text: "Fun"
+  },
+]
+
+const store = createStore(reducer, chores, composeWithDevTools())
 
 ReactDOM.render(
   <React.StrictMode>
