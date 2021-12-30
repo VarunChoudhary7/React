@@ -1,0 +1,13 @@
+import { useSelector } from "react-redux";
+
+const Products = () => {
+    const products = useSelector(state => state)
+    return (
+        <div>
+            <h2>Products</h2>
+            {products.map(products => <li><a href={`product/${products.name}`}>{products.name}</a></li>)}
+        </div>
+    );
+}
+
+export default Products;
